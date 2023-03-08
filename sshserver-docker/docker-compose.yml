@@ -2,7 +2,7 @@ version: '3.9'
 
 services:
   sshserver:
-    image: mwg/sshserver
+    image: my_sshserver
     container_name: sshserver
     ports:
       - 2222:22
