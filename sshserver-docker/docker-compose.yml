@@ -7,8 +7,8 @@ services:
     ports:
       - 2222:22
     environment:
-      - SMB_USER=sshuser
-      - SMB_USER=pass
+      - sshuser=sshuser
+      - password=pass
     volumes:
       - /home/minhho/ssh:/data
     deploy:
