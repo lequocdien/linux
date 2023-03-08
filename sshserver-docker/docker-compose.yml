@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  sshserver:
+    image: mwg/sshserver
+    container_name: sshserver
+    ports:
+      - 2222:22
+    environment:
+      - SMB_USER=sshuser
+      - SMB_USER=pass
+    volumes:
+      - /home/minhho/ssh:/data
+    deploy:
+      replicas: 1
